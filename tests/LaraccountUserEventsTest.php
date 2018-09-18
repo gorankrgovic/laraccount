@@ -39,7 +39,7 @@ class LaraccountUserEventsTest extends LaraccountEventsTestCase
     {
         User::setEventDispatcher($this->dispatcher);
         $account = Account::create(['name' => 'account']);
-        $this->dispatcherShouldFire('account.attached', [$this->user, $account->id, null], User::class);
+        $this->dispatcherShouldFire('account.attached', [$this->user, $account->id], User::class);
         $this->user->attachAccount($account);
     }
 
@@ -48,7 +48,7 @@ class LaraccountUserEventsTest extends LaraccountEventsTestCase
         $account = Account::create(['name' => 'account']);
         $this->user->attachAccount($account);
         User::setEventDispatcher($this->dispatcher);
-        $this->dispatcherShouldFire('account.detached', [$this->user, $account->id, null], User::class);
+        $this->dispatcherShouldFire('account.detached', [$this->user, $account->id], User::class);
         $this->user->detachAccount($account);
     }
 

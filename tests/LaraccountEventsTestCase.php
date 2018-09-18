@@ -43,7 +43,7 @@ class LaraccountEventsTestCase extends LaraccountTestCase
         $dispatcher = $modelClass::getEventDispatcher();
         $this->assertTrue($dispatcher->hasListeners($eventName));
         $this->assertCount(1, $dispatcher->getListeners($eventName));
-        $this->assertEquals('test', $dispatcher->fire($eventName, ['user', 'an_id', null])[0]);
+        $this->assertEquals('test', $dispatcher->fire($eventName, ['user', 'an_id'])[0]);
     }
 
     /**

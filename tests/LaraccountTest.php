@@ -29,8 +29,8 @@ class LaraccountTest extends LaraccountTestCase
         */
         $this->laraccount->shouldReceive('user')->andReturn($this->user)->twice()->ordered();
         $this->laraccount->shouldReceive('user')->andReturn(false)->once()->ordered();
-        $this->user->shouldReceive('hasAccount')->with('UserAccount', null, false)->andReturn(true)->once();
-        $this->user->shouldReceive('hasAccount')->with('NonUserAccount', null, false)->andReturn(false)->once();
+        $this->user->shouldReceive('hasAccount')->with('UserAccount')->andReturn(true)->once();
+        $this->user->shouldReceive('hasAccount')->with('NonUserAccount')->andReturn(false)->once();
         /*
         |------------------------------------------------------------
         | Assertion

@@ -74,7 +74,7 @@ class LaraccountUserTest extends LaraccountTestCase
         */
         $this->assertWasDetached('account', $this->user->detachAccount($account), $account);
         $this->assertWasDetached('account', $this->user->detachAccount($account->id), $account);
-        $this->assertWasDetached('account', $this->user->deatchAccount($account->toArray()), $account);
+        $this->assertWasDetached('account', $this->user->detachAccount($account->toArray()), $account);
         $this->assertInstanceOf('Laraccount\Tests\Models\User', $this->user->detachAccount('account_a'));
         $this->assertEquals(0, $this->user->accounts()->count());
     }
