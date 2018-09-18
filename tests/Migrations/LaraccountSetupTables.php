@@ -30,7 +30,7 @@ class LaraccountSetupTables extends Migration
             $table->string('user_type');
             $table->foreign('account_id')->references('id')->on('accounts')
                 ->onUpdate('cascade')->onDelete('cascade');
-            $table->primary(['user_id}', 'account_id', 'user_type']);
+            $table->primary(['user_id', 'account_id', 'user_type']);
 
         });
     }
