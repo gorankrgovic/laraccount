@@ -1,0 +1,9 @@
+<?php
+namespace DummyNamespace;
+
+use Laraccount\Models\LaraccountAccount;
+
+class DummyClass extends LaraccountAccount
+{
+    //
+}
