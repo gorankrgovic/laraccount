@@ -14,7 +14,7 @@ class LaraccountTestCase extends TestCase
 
     protected function getPackageAliases($app)
     {
-        return ['Laraccount' => 'Laraccount\LaracountFacade'];
+        return ['Laraccount' => 'Laraccount\LaraccountFacade'];
     }
 
 
