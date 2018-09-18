@@ -2,6 +2,7 @@
 namespace Laraccount\Test;
 
 use Laraccount\Tests\Models\Account;
+use Laraccount\Tests\Models\User;
 use Mockery as m;
 use Laraccount\Tests\LaraccountTestCase;
 
