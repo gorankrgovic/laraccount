@@ -52,7 +52,7 @@ trait LaraccountUserTrait
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphToMany
      */
-    public function roles()
+    public function accounts()
     {
         $accounts = $this->morphToMany(
             Config::get('laraccount.models.account'),
