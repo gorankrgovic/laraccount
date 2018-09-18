@@ -2,6 +2,11 @@
 
 
 [![Build Status](https://api.travis-ci.com/gorankrgovic/laraccount.svg?branch=master)](https://travis-ci.com/gorankrgovic/laraccount)
+[![Latest Stable Version](https://poser.pugx.org/gorankrgovic/laraccount/v/stable)](https://packagist.org/packages/gorankrgovic/laraccount)
+[![Total Downloads](https://poser.pugx.org/gorankrgovic/laraccount/downloads)](https://packagist.org/packages/gorankrgovic/laraccount)
+[![License](https://poser.pugx.org/gorankrgovic/laraccount/license)](https://packagist.org/packages/gorankrgovic/laraccount)
+[![Monthly Downloads](https://poser.pugx.org/gorankrgovic/laraccount/d/monthly)](https://packagist.org/packages/gorankrgovic/laraccount)
+[![Daily Downloads](https://poser.pugx.org/gorankrgovic/laraccount/d/daily)](https://packagist.org/packages/gorankrgovic/laraccount)
 
 
 Laraccount is an easy and flexible way to add account authorization capability to **Laravel 5 (>=5.2.32)**.
