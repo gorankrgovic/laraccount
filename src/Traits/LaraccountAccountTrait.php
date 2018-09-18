@@ -49,6 +49,7 @@ trait LaraccountAccountTrait
         return $this->morphedByMany(
             Config::get('laraccount.user_models')[$relationship],
             'user',
+            Config::get('laraccount.tables.account_user'),
             Config::get('laraccount.foreign_keys.account'),
             Config::get('laraccount.foreign_keys.user')
         );
